@@ -5,7 +5,21 @@
 	<key>bundleid</key>
 	<string>com.linusk</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>697EFEC1-D695-41DF-A827-E2D9644874AF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EF270870-8CD1-4AE3-960C-B882FC65D180</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string></string>
 	<key>description</key>
@@ -42,9 +56,9 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Loading...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<string>./node_modules/.bin/run-node index.js "viewGroups" "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -65,6 +79,29 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "viewGroup" "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EF270870-8CD1-4AE3-960C-B882FC65D180</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -74,6 +111,13 @@
 		<dict>
 			<key>xpos</key>
 			<real>140</real>
+			<key>ypos</key>
+			<real>125</real>
+		</dict>
+		<key>EF270870-8CD1-4AE3-960C-B882FC65D180</key>
+		<dict>
+			<key>xpos</key>
+			<real>380</real>
 			<key>ypos</key>
 			<real>125</real>
 		</dict>

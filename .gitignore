@@ -1,3 +1,6 @@
 node_modules
 .env
 group-icons
+dist
+persist
+yarn-error.log
