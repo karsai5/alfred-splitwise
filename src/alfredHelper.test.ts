@@ -1,10 +1,10 @@
-import { getGroupsInAlfredFormat } from './alfredHelper';
-import { getGroups } from './splitwiseHelper';
-jest.mock('./splitwiseHelper.js')
+import { getGroupsInAlfredFormat } from './alfredHelper.js';
+import { getGroups } from './splitwiseHelper.js';
+jest.mock('./splitwiseHelper')
 
 describe('showgroups', () => {
   it('should correctly map groups', async () => {
-    getGroups.mockImplementation(() => Promise.resolve([
+    (getGroups as any).mockImplementation(() => Promise.resolve([
       {
         id: 0,
         name: 'Non-group expenses',
